@@ -1,11 +1,8 @@
 [phases.setup]
-nixPkgs = ['python312', 'gcc']
+nixPkgs = ['python312', 'gcc', 'pkg-config']
 
 [phases.install]
 cmds = ['pip install --upgrade pip', 'pip install aiogram==3.7.0']
 
 [start]
 cmd = 'python main.py'
-
-[variables]
-PYTHON_VERSION = '3.12'
